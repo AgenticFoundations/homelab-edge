@@ -47,7 +47,7 @@ projects/
 └── llm-inference/     # Nginx, LiteLLM, Postgres, model configuration
 ```
 
-This guide uses [homelab-edge v0.1.0](https://github.com/AgenticFoundations/homelab-edge/releases/tag/v0.1.0) and [llm-inference v0.1.0](https://github.com/AgenticFoundations/llm-inference/releases/tag/v0.1.0). Both repositories currently require access.
+This guide uses [homelab-edge v0.1.0](https://github.com/AgenticFoundations/homelab-edge/releases/tag/v0.1.0) and [llm-inference v0.1.0](https://github.com/AgenticFoundations/llm-inference/releases/tag/v0.1.0). Both repositories are public.
 
 To get the companion application, run this from your `projects` directory:
 
@@ -102,7 +102,7 @@ Cloudflare documents the process in its [full DNS setup guide](https://developer
 
 ## 4. Start one shared connector
 
-The tunnel project is available at [homelab-edge v0.1.0](https://github.com/AgenticFoundations/homelab-edge/tree/v0.1.0). The repository is private at the time of this draft; cloning requires access.
+The tunnel project is available at [homelab-edge v0.1.0](https://github.com/AgenticFoundations/homelab-edge/tree/v0.1.0).
 
 From the `projects` directory:
 
