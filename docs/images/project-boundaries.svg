@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img">
+<title>Two projects. One explicit connection.</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#38bdf8"/></marker></defs>
+<rect width="1400" height="760" fill="#0f172a"/>
+<text x="60" y="80" fill="#f8fafc" font-family="Arial,sans-serif" font-size="36" font-weight="bold">Two projects. One explicit connection.</text>
+<text x="60" y="120" fill="#94a3b8" font-family="Arial,sans-serif" font-size="21">Only the application ingress joins the shared tunnel network.</text>
+<rect x="60" y="190" width="360" height="110" rx="18" fill="#1e293b" stroke="#fb923c" stroke-width="2"/>
+<text x="82" y="232" fill="#f8fafc" font-family="Arial,sans-serif" font-size="24" font-weight="bold">homelab-edge</text>
+<text x="82" y="266" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="18">Owns cloudflared + shared network</text>
+<rect x="540" y="190" width="350" height="110" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+<text x="562" y="232" fill="#f8fafc" font-family="Arial,sans-serif" font-size="24" font-weight="bold">Shared Docker network</text>
+<text x="562" y="266" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="18">homelab-edge</text>
+<rect x="1010" y="190" width="330" height="110" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+<text x="1032" y="232" fill="#f8fafc" font-family="Arial,sans-serif" font-size="24" font-weight="bold">Nginx ingress</text>
+<text x="1032" y="266" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="18">Network alias: llm-edge</text>
+<rect x="1010" y="420" width="330" height="110" rx="18" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+<text x="1032" y="462" fill="#f8fafc" font-family="Arial,sans-serif" font-size="24" font-weight="bold">LiteLLM + Postgres</text>
+<text x="1032" y="496" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="18">Application networks</text>
+<rect x="60" y="420" width="360" height="110" rx="18" fill="#1e293b" stroke="#38bdf8" stroke-width="2"/>
+<text x="82" y="462" fill="#f8fafc" font-family="Arial,sans-serif" font-size="24" font-weight="bold">Another application</text>
+<text x="82" y="496" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="18">Unique ingress alias: notes-edge</text>
+<path d="M420,245 L540,245" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M890,245 L1010,245" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M1175,300 L1175,420" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M240,420 L540,280" stroke="#38bdf8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<text x="60" y="620" fill="#94a3b8" font-family="Arial,sans-serif" font-size="20">The tunnel does not start or stop application containers.</text>
+<text x="60" y="660" fill="#94a3b8" font-family="Arial,sans-serif" font-size="20">The LLM application owns its ingress attachment; the shared network must exist first.</text>
+<text x="60" y="700" fill="#94a3b8" font-family="Arial,sans-serif" font-size="20">Gateway and database are not attached to homelab-edge.</text>
+</svg>
